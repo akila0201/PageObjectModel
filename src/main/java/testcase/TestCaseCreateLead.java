@@ -16,7 +16,7 @@ public class TestCaseCreateLead extends BaseClass{
 	
 	@Test(dataProvider="fetchData")
 	public void createLead(String username, String password, String companyname, String firstname, String lastname) {
-//	tets
+//	testing
 	LoginPage lp = new LoginPage(driver);
 	lp.enterUsername(username).enterPassword(password).clickLoginButton().clickCrmsfaLink()
     .clickLeadsLink().clickCreateLeadLink().enterCompanyName(companyname).enterFirstName(firstname)
